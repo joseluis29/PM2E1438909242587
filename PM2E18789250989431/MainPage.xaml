@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E18789250989431.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#41d962"  Padding="20" CornerRadius="0">
+            <Label Text="PM2E18789250989431 - Grupo 3" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
+        </Frame>
+
+
+        <Image x:Name="fotoSitio" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Source="usuario1.png"   Margin="5,0,5,5"/>
+       
+        <Button Text="Tomar Foto" 
+                x:Name="btnFoto" 
+                Clicked="btnFoto_Clicked" 
+                BackgroundColor="#38D0BE" 
+                CornerRadius="25" 
+                Margin="50,10,50,10"/>
+ 
+        
+        <Label Text="Latitud"/>
+        <Entry x:Name="txtLat" IsReadOnly="true" TextTransform="None"/>
+        <Label Text="Longitud"/>
+        <Entry x:Name="txtLon" IsReadOnly="true" TextTransform="None"/>
+        <Label Text="Descripcion"/>
+        <Entry x:Name="txtDescripcion"/>
+
+
+        <FlexLayout >
+            <Button Text="Agregar" 
+                    x:Name="btnAdd" 
+                    Clicked="btnAdd_Clicked" 
+                    BackgroundColor="#41d962"
+                    CornerRadius="25" 
+                    Margin="50,10,50,1"
+                    />
+
+            <Button Text="Listar Sitios" 
+                    x:Name="btnList" 
+                    Clicked="btnList_Clicked" 
+                    BackgroundColor="#41d962"
+                    CornerRadius="25" 
+                    Margin="1,10,30,0" 
+                    />
+        </FlexLayout>
+
+
+        <Button Text="Salir" 
+                x:Name="btnSalir" 
+                Clicked="btnSalir_Clicked" 
+                BackgroundColor="#3e9c40" 
+                CornerRadius="25" 
+                Margin="50,10,50,10"
+                />
+        
+    </StackLayout>
+
+</ContentPage>
